@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Single source of truth for the brand gradient — change these three
+     stops to re-theme the entire UI (brand name, hero highlight, buttons). */
+  --brand-orange: #ff7a45;
+  --brand-pink: #ef4f9e;
+  --brand-violet: #7c5cfc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base-bg text-base-text font-body antialiased;
+  background-image:
+    radial-gradient(60rem 40rem at 85% -10%, rgba(124, 92, 252, 0.16), transparent 60%),
+    radial-gradient(50rem 30rem at -10% 10%, rgba(239, 79, 158, 0.10), transparent 55%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(239, 79, 158, 0.35);
+}
+
+/* Visible keyboard focus, kept consistent across interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--brand-pink);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.brand-text {
+  background-image: var(--tw-gradient-brand, linear-gradient(100deg, var(--brand-orange), var(--brand-pink), var(--brand-violet)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-fill {
+  background-image: linear-gradient(100deg, var(--brand-orange), var(--brand-pink), var(--brand-violet));
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+/* react-toastify theme, tuned to match the dark glass UI */
+.Toastify__toast {
+  background: #10141f !important;
+  color: #e8eaf1 !important;
+  border: 1px solid #232a3b !important;
+  border-radius: 12px !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.9rem !important;
+}
+.Toastify__progress-bar {
+  background: linear-gradient(100deg, var(--brand-orange), var(--brand-pink), var(--brand-violet)) !important;
+}
+.Toastify__close-button {
+  color: #8892a6 !important;
+  opacity: 1 !important;
+}
