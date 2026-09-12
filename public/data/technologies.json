@@ -1,0 +1,142 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "description": "A declarative, component-based library for building fast, interactive user interfaces.",
+    "icon": "https://cdn.simpleicons.org/react/61DAFB",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A typed superset of JavaScript that catches bugs at compile time and scales with your codebase.",
+    "icon": "https://cdn.simpleicons.org/typescript/3178C6",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework for building custom designs directly in your markup.",
+    "icon": "https://cdn.simpleicons.org/tailwindcss/38BDF8",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime built on Chrome's V8 engine for building scalable server-side applications.",
+    "icon": "https://cdn.simpleicons.org/nodedotjs/5FA04E",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "express",
+    "name": "Express",
+    "category": "Backend",
+    "description": "A minimal, unopinionated web framework for Node.js used to build APIs and web servers quickly.",
+    "icon": "https://cdn.simpleicons.org/express/ffffff",
+    "rating": 4.5,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Lightweight"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful open-source object-relational database known for reliability and standards compliance.",
+    "icon": "https://cdn.simpleicons.org/postgresql/4169E1",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Top SQL"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-oriented NoSQL database designed for flexible schemas and horizontal scaling.",
+    "icon": "https://cdn.simpleicons.org/mongodb/47A248",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Flexible"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for packaging applications into portable containers that run the same everywhere.",
+    "icon": "https://cdn.simpleicons.org/docker/2496ED",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Containers"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "category": "Tools",
+    "description": "A distributed version control system for tracking changes and collaborating on code.",
+    "icon": "https://cdn.simpleicons.org/git/F05032",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "category": "Tools",
+    "description": "A collaborative interface design tool used to prototype and hand off UI to developers.",
+    "icon": "https://cdn.simpleicons.org/figma/F24E1E",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Design"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Language",
+    "description": "A readable, general-purpose language widely used for backend services, scripting, and data work.",
+    "icon": "https://cdn.simpleicons.org/python/3776AB",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Versatile"
+  },
+  {
+    "id": "vite",
+    "name": "Vite",
+    "category": "Tools",
+    "description": "A build tool that serves your code via native ES modules for near-instant dev server start.",
+    "icon": "https://cdn.simpleicons.org/vite/646CFF",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast"
+  },
+  {
+    "id": "graphql",
+    "name": "GraphQL",
+    "category": "Backend",
+    "description": "A query language for APIs that lets clients request exactly the data they need.",
+    "icon": "https://cdn.simpleicons.org/graphql/E10098",
+    "rating": 4.5,
+    "difficulty": "Advanced",
+    "badge": "Precise"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Database",
+    "description": "An in-memory data store used for caching, session storage, and real-time features.",
+    "icon": "https://cdn.simpleicons.org/redis/FF4438",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "badge": "In-Memory"
+  }
+]
