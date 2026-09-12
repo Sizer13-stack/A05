@@ -49,8 +49,3 @@ Build for production with `npm run build`; the output is written to `dist/`.
 7. Parents pass data down via props; children send data back up by calling a function passed as a prop — e.g. TechGrid calls the onAdd prop from App when a card is clicked.
 
 ---
-
-## 📤 Submission
-
-- GitHub Repository Link:
-- Live Site Link:
