@@ -40,52 +40,13 @@ Build for production with `npm run build`; the output is written to `dist/`.
 ---
 
 ## React questions
-
-**1. What is JSX, and why is it used in React?**
-JSX is a syntax extension that lets you write HTML-like markup directly
-inside JavaScript. React uses it because describing UI as markup close to
-the logic that drives it is easier to read and reason about than building
-that same tree with plain function calls like `React.createElement`.
-
-**2. What is the difference between props and state?**
-Props are data passed into a component from its parent — the component
-receiving them can't change them. State is data a component owns and
-manages itself, and it can change over time (usually in response to user
-actions), which triggers a re-render.
-
-**3. What does the `useState` hook do, and where did you use it in this project?**
-`useState` gives a component a piece of state that persists between
-re-renders, plus a function to update it. In this project it's used inside
-the `useTechStack` hook to hold the fetched technology list, the selected
-stack, and the loading/error flags.
-
-**4. What does the `useEffect` hook do, and why did you need it to load the JSON data?**
-`useEffect` runs side effects — code that reaches outside of rendering,
-like fetching data — after a component renders. Fetching is asynchronous
-and shouldn't happen directly during render, so `useEffect` is used to kick
-off the `fetch` call once when the app mounts, and to update state once the
-data comes back.
-
-**5. Why does every item in a `.map()` list need a unique `key` prop?**
-React uses the `key` to tell which items changed, were added, or were
-removed between renders, so it only updates the DOM nodes that actually
-need it. Without a stable key, React can misidentify items and either
-re-render more than necessary or mix up state between items.
-
-**6. What is conditional rendering? Show one place you used it (example: the empty stack message).**
-Conditional rendering means showing different UI depending on some
-condition, instead of always rendering the same markup. In
-`src/components/YourStack.jsx`, the panel renders an `EmptyState` message
-when `stack.length === 0`, and otherwise maps over the selected
-technologies.
-
-**7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?**
-A parent passes data down to a child as props. To send something back up,
-the parent passes a function down as a prop, and the child calls that
-function (usually with some data as an argument) when something happens —
-for example, `TechGrid` receives an `onAdd` callback from `App` and calls
-`onAdd(tech)` when a card's button is clicked, which runs the parent's
-`addToStack` logic.
+1. JSX lets you write HTML-like markup inside JavaScript, making UI easier to read and write than nested React.createElement calls.
+2. Props are data passed down from a parent (read-only to the child); state is data a component owns itself and can change, triggering a re-render.
+3. useState gives a component a value that persists across renders plus a setter to update it — used here to hold the technology list, the stack, and the loading flag.
+4. useEffect runs side effects like data fetching after render; it's needed here to trigger the JSON fetch once on mount and update state when it resolves.
+5. The key prop lets React tell items apart between renders, so it updates only what changed instead of re-rendering or mixing up the whole list.
+6. Conditional rendering shows different UI based on a condition — e.g. YourStack.jsx renders an empty-state message when stack.length === 0, otherwise the list.
+7. Parents pass data down via props; children send data back up by calling a function passed as a prop — e.g. TechGrid calls the onAdd prop from App when a card is clicked.
 
 ---
 
