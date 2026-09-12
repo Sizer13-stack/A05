@@ -49,3 +49,6 @@ Build for production with `npm run build`; the output is written to `dist/`.
 7. Parents pass data down via props; children send data back up by calling a function passed as a prop — e.g. TechGrid calls the onAdd prop from App when a card is clicked.
 
 ---
+
+## Site is live
+Live link : https://tangerine-alpaca-c9c4d5.netlify.app/
