@@ -52,7 +52,7 @@ export default function App() {
         position="bottom-right"
         autoClose={3000}
         newestOnTop
-        theme="dark"
+        theme="light"
       />
     </div>
   );

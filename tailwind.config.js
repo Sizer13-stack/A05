@@ -5,11 +5,11 @@ export default {
     extend: {
       colors: {
         base: {
-          bg: "#0a0d14",
-          surface: "#10141f",
-          border: "#232a3b",
-          muted: "#8892a6",
-          text: "#e8eaf1",
+          bg: "#f7f8fb",
+          surface: "#ffffff",
+          border: "#e2e5ee",
+          muted: "#667085",
+          text: "#171923",
         },
         brand: {
           orange: "#ff7a45",

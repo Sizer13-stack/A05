@@ -56,11 +56,11 @@ input:focus-visible {
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e2e5ee;
+  box-shadow: 0 1px 3px rgba(20, 20, 40, 0.06);
   backdrop-filter: blur(14px);
 }
-
 /* react-toastify theme, tuned to match the dark glass UI */
 .Toastify__toast {
   background: #10141f !important;
